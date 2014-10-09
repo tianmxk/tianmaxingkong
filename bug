@@ -1,0 +1,15 @@
+##问题解决都有方法
+###Ubuntu服务，JDK6，PDF转图片乱码(icepdf框架)
+解决方法：
+```shell
+  sudo apt-get install ttf-wqy-zenhei
+  cd ${JDK_HOME}/jre/lib/fonts
+  sudo mkdir fallback
+  sudo ln -s /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc fallback/wqy-zenhei.ttf
+```
+参考资料：
+[资料1](http://wiki.ubuntu.org.cn/Java)
+[资料2](http://blog.csdn.net/bbplayers/article/details/6429290)
+[资料3](http://developer.51cto.com/art/200907/135013.htm)
+[资料4](http://blog.csdn.net/akof1314/article/details/4570722)
+[资料5](http://docs.oracle.com/cd/E26926_01/html/E27146/glmlc.html)
