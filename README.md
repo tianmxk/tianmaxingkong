@@ -16,3 +16,4 @@ tianmaxingkong
     *  [1](https://github.com/toolkitchen/ShadowDOM)
     *  [2](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/)
     *  [3](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/)
+* [Android获取地址](http://www.cnblogs.com/fly_binbin/archive/2010/12/16/1908518.html)
