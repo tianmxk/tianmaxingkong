@@ -4,15 +4,15 @@ ImageMagick是用C语言开发图片处理程序。可以对图片进行改变�
 
 ### 1.下载[ImageMagick](http://imagemagick.org/script/download.php)
 ### 2.解压安装
-    ```shell
+```shell
     tar zxvf ImageMagick-6.8.9-10.tar.gz
     cd ImageMagick-6.8.9-10/
     ./configure
     sudo make
     sudo make install
-    ```
+```
 ### 3.判断ImageMagick是否安装成功
-    ```shell
+```shell
     convert -version
     convert: error while loading shared libraries: libMagickCore-6.Q16.so.2: cannot open shared object file: No such file or directory
     
@@ -28,4 +28,4 @@ ImageMagick是用C语言开发图片处理程序。可以对图片进行改变�
     Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
     Features: DPC OpenMP
     Delegates: zlib
-    ```
+```
