@@ -88,3 +88,4 @@ convert tmp.jpg -resize 50% resize_tmp.jpg
 
 ## 参考资料：
 [ImageMagicK 常用命令](http://hahack.com/wiki/tools-imagemagick.html)
+[ImageMagick 命令行下图像处理的利器](http://segmentfault.com/a/1190000000442060)
