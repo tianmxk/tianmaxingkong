@@ -85,3 +85,6 @@ convert tmp.jpg -resize 64x64\< resize_tmp.jpg
 # 按比例缩放
 convert tmp.jpg -resize 50% resize_tmp.jpg
 ```
+
+## 参考资料：
+[ImageMagicK 常用命令](http://hahack.com/wiki/tools-imagemagick.html)
