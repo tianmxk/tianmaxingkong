@@ -87,6 +87,24 @@ convert tmp.jpg -resize 64x64\< resize_tmp.jpg
 convert tmp.jpg -resize 50% resize_tmp.jpg
 ```
 
+### 7.安装[zlib](http://www.zlib.net/)(通用压缩库，图形格式png使用zlib中的deflate压缩算法)
+```shell
+tar zxvf zlib-1.2.8.tar.gz
+cd zlib-1.2.8/
+./configure
+sudo make
+sudo make install
+```
+
+### 8.安装[freetype](http://www.freetype.org/)(字体引擎,生产高质量的字形影像输出，(例如彩色文本渲染，挖空等等))
+```shell
+tar zxvf freetype-2.5.3.tar.gz
+cd freetype-2.5.3//
+./configure
+sudo make
+sudo make install
+```
+
 ## 参考资料：
 [ImageMagicK 常用命令](http://hahack.com/wiki/tools-imagemagick.html)
 [ImageMagick 命令行下图像处理的利器](http://segmentfault.com/a/1190000000442060)
