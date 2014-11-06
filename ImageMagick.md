@@ -57,7 +57,7 @@ convert tmp.jpg tmp.png
 # convert: error while loading shared libraries: libjpeg.so.9: 
 # cannot open shared object file: No such file or directory
 
-# 解决问题：
+# 解决问题：[参考](http://main.org.ua/swfrender-error-while-loading-shared-libraries-libjpeg-so-7-cannot-open-shared-object-file-no-such-file-or-directory/)
 sudo ranlib /usr/local/lib/libjpeg.a
 sudo ldconfig /usr/local/lib
 
