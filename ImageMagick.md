@@ -49,4 +49,39 @@ convert tmp.jpg tmp.png
 
 # 继续执行命令
 convert tmp.jpg tmp.png
+# convert: no decode delegate for this image format `JPEG' @ error/constitute.c/ReadImage/501.
+# convert: no images defined `tmp.png' @ error/convert.c/ConvertImageCommand/3210.
+
+# 发现还是报错，需要重新执行第二步（重新安装ImageMagick）
+convert tmp.jpg tmp.png
+# convert: error while loading shared libraries: libjpeg.so.9: 
+# cannot open shared object file: No such file or directory
+
+# 解决问题：
+sudo ranlib /usr/local/lib/libjpeg.a
+sudo ldconfig /usr/local/lib
+
+# 继续执行命令
+convert tmp.jpg tmp.png
+
+# Done.
+```
+### 5.将PDF转换PNG
+```shell
+# TODO 清晰度设置
+convert tmp.pdf -density 300 tmp.png
+```
+
+### 6.缩放图片
+```shell
+# 保持高宽比
+convert tmp.jpg -resize 64x64 resize_tmp.jpg
+# 不保持高宽比
+convert tmp.jpg -resize 64x64\! resize_tmp.jpg
+# 只缩小大图
+convert tmp.jpg -resize 64x64\> resize_tmp.jpg
+# 只放大小图
+convert tmp.jpg -resize 64x64\< resize_tmp.jpg
+# 按比例缩放
+convert tmp.jpg -resize 50% resize_tmp.jpg
 ```
