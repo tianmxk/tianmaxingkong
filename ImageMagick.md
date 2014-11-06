@@ -23,9 +23,30 @@ sudo /sbin/ldconfig -v  #（重新载入ld.so.conf文件）
 
 # 继续执行命令
 convert -version
-    
 # Version: ImageMagick 6.8.9-10 Q16 i686 2014-11-06 http://www.imagemagick.org
 # Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
 # Features: DPC OpenMP
 # Delegates: zlib
+```
+### 4.图片格式转换
+```shell
+convert tmp.jpg tmp.png
+# convert: no decode delegate for this image format `JPEG' @ error/constitute.c/ReadImage/501.
+# convert: no images defined `tmp.png' @ error/convert.c/ConvertImageCommand/3210.
+
+# 解决问题：（安装ImageMagick支持库）
+# 安装[libjpeg](http://www.ijg.org/) (支持JPEG格式)
+#    wget http://www.ijg.org/files/jpegsrc.v9a.tar.gz
+#    tar zxvf jpegsrc.v9a.tar.gz
+#    cd jpeg-9a/
+#    ./configure --enable-shared
+#    sudo make && sudo make install
+# 安装[libpng](http://www.libpng.org/) (支持png格式) [下载](http://www.libpng.org/pub/png/libpng.html）
+#    tar zxvf libpng-1.6.14.tar.gz
+#    cd libpng-1.6.14/
+#    ./configure
+#    sudo make && sudo make install
+
+# 继续执行命令
+convert tmp.jpg tmp.png
 ```
